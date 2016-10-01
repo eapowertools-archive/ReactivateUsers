@@ -17,5 +17,11 @@ The friendly name of the Qlik Sense generated certificate used to connect to the
 ***This Code defaults to using the CurrentUser certificate store and prefers using the QlikClient certificate.
 The QlikClient certificate is installed for the service account user set up during Qlik Sense installation.***
 
+## DIRECTIONS
+1. Download the ps1 file to the Qlik Sense server Central Node.
+2. Run the script as the Qlik Sense service account user so that the QlikClient certificate can be used.
+3. If prompted to disable signing of Powershell scripts, follow the directions on this page     
+__[Set Execution Policy for Powershell Scripts](https://github.com/eapowertools/ReactivateUsers/wiki/Changing-Execution-Signing-Policy-in-Powershell)__.
+
 Below is an example of running the script.
 ![pic](https://github.com/eapowertools/ReactivateUsers/blob/master/ExampleScreenShot.png?raw=true)
